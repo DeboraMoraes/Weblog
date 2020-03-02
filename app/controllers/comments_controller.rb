@@ -3,7 +3,9 @@ class CommentsController < ApplicationController
     before_action :authenticate_user!
 
     def create
-        @post.comments.create! comments_params
+        cp = comments_params
+        cp[:user] = current_user
+        @post.comments.create! cp
         redirect_to @post
     end
 

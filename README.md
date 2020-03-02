@@ -1,24 +1,26 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is a web blog made with Ruby on Rails.
 
-Things you may want to cover:
+## Requisites
+In order to run this application you must care for the requisites that are the following
+- Ruby 2.x
+- Ruby on Rails 5^
+- NodeJS
+- Yarn
 
-* Ruby version
+## Instalation
+In order to install this application you must do the following commands:
 
-* System dependencies
+- To clone the project to you machine you must download via git or download the ziped project from github:
+``` git clone https://github.com/DeboraMoraes/Weblog.git ```
 
-* Configuration
+- To bundle the application:
+``` bundle install ```
 
-* Database creation
+- To migrate the database
+``` rails db:migrate ```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Serving locally
+You can run the rails server locally with the following command
+``` rails server ```
